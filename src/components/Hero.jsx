@@ -12,16 +12,15 @@ const Hero = () => {
       <section
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
         bg-about overflow-hidden">
-           {/* <div className="row align-items-center flex-row-reverse">
-                <div className="me col-sm-6 col-sm-push-6">
+          
                 <img
-            className="absolute bottom-0 ml-[50vw] 
-            lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
+            className="absolute bottom-0 ml-[20vw] 
+            lg:ml-[50vw] md:ml-[40vw] xmd:ml-[50vw] 2xl:ml-[63vw]
             sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
             src={sketch}
             alt="sketch"
           />
-         */}
+         
         <div
           className={`absolute inset-0 sm:top-[150px] top-[150px] 
           lg:top-[150px] xl:top-[150px] ${styles.paddingX} 

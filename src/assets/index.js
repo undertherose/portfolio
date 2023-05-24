@@ -7,7 +7,7 @@ import logo from './logo/logo.png';
 import logotext from './logo/logo-text-black.png';
 
 import shaq from './personal/shaq.png';
-import sketch from './personal/sketch1.png';
+import sketch from './personal/sketch.png';
 
 import backend from './icons/backend.png';
 import ux from './icons/ux.png';

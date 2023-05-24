@@ -49,7 +49,7 @@ export const navLinks = [
   },
   {
     id: 'experience',
-    title: 'Experinces',
+    title: 'Experiences',
   },
   {
     id: 'contact',

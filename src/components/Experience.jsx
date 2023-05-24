@@ -28,7 +28,7 @@ const ExperienceCard = ({ experience }) => (
         </h3>
       </div>
     }
-    iconStyle={{ background: experience.iconBg }}
+    iconStyle={{ background: experience.iconBg, color: experience.iconColor}}
     icon={
       <div className="flex justify-center items-center w-full h-full">
         <img
@@ -64,7 +64,7 @@ const Experience = () => {
       </motion.div>
 
       <div className="mt-20 flex flex-col">
-        <VerticalTimeline className="vertical-timeline-custom-line" lineColor={ 'white' }>
+        <VerticalTimeline className="vl-custom vertical-timeline-custom-line" lineColor={ 'white' }>
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
@@ -73,7 +73,7 @@ const Experience = () => {
               background: '#ffffff',
               color: '#292929',
               boxShadow:
-                'rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+                '#F9D7D7 0px 10px 15px -3px, #F9D7D7 0px 4px 6px -2px',
               display: 'flex',
               justifyContent: 'center',
               alignItems: 'center',
@@ -94,9 +94,9 @@ const Experience = () => {
             <button
               className="resume-button live-demo flex justify-between 
               sm:text-[18px] text-[14px] text-white 
-              font-bold font-beckman items-center py-5 pl-3 pr-3 
-              whitespace-nowrap gap-1 sm:w-[148px] sm:h-[58px] 
-              w-[125px] h-[46px] rounded-[10px] bg-pink 
+              font-bold font-poppins items-center py-5 pl-3 pr-3 
+              whitespace-nowrap gap-1  sm:h-[58px] 
+               h-[46px] rounded-[10px] bg-pink 
               sm:mt-[22px] mt-[16px] transition duration-[0.2s] 
               ease-in-out"
               // onClick={() =>
@@ -117,13 +117,13 @@ const Experience = () => {
                   .setAttribute('src', download);
               }}>
               <a href="../files/resume.pdf" download /> 
-              MY RESUME
-              <img
+              Download My Résumé
+              {/* <img
                 src={download}
                 alt="download"
                 className="download-btn text-white sm:w-[26px] sm:h-[26px] 
                 w-[23px] h-[23px] object-contain"
-              />
+              /> */}
             </button>
           </VerticalTimelineElement>
         </VerticalTimeline>

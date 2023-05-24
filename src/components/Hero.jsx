@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { sketch, shaq, bwmap, worldmap } from '../assets';
+import Typewriter from "typewriter-effect";
 // import Text from './Text.js'
 
 const Hero = () => {
@@ -20,12 +21,7 @@ const Hero = () => {
             src={sketch}
             alt="sketch"
           />
-            </div>
-                <div className="col-sm-6 col-sm-pull-6">
-                    <p className="introduction">Hello  My name is <strong class="pink">Sylvia Wu</strong>. I'm a <strong class="serenity">UX/UI Designer</strong> and <strong class="serenity">Developer</strong>. 
-                        Right now, I'm a student at the <strong class="purple">University of Washington iSchool</strong> studying <strong class="pink">HCI</strong>.</p>
-                </div>
-            </div> */}
+         */}
         <div
           className={`absolute inset-0 sm:top-[150px] top-[150px] 
           lg:top-[150px] xl:top-[150px] ${styles.paddingX} 
@@ -49,7 +45,20 @@ const Hero = () => {
             </h1>
             {/* <Text /> */}
             <p className={`${styles.heroSubText} mt-2  text-eerieBlack`}>
-              I am a UI/UX Developer. <br className="sm:block hidden" />
+              I am a <br className="sm:block hidden" />
+              <Typewriter
+                options={{
+                  strings: [
+                    "UI/UX Developer",
+                    "Software Developer",
+                    "Front End Developer",
+                    "React Js Developer",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 50,
+                }}
+              />
             </p>
           </div>
           <div

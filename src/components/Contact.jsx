@@ -118,14 +118,13 @@ const Contact = () => {
             />
           </label>
 
-          <button
+          {/* <button
             type="submit"
-            className="submit-button live-demo items-center flex justify-center sm:gap-4 
-            gap-3 sm:text-[20px] text-[16px] text-timberWolf 
-            font-bold font-beckman items-center py-5
+            className="submit-button contact-button bg-pink live-demo items-center flex justify-center sm:gap-4 
+            gap-3 sm:text-[20px] text-[16px] text-white 
+            font-bold font-poppins items-center py-5
             whitespace-nowrap sm:w-[130px] sm:h-[50px] 
             w-[100px] h-[45px] rounded-[10px] bg-night 
-            hover:bg-battleGray hover:text-eerieBlack 
             transition duration-[0.2s] ease-in-out"
             onMouseOver={() => {
               document
@@ -134,7 +133,8 @@ const Contact = () => {
             }}
             onMouseOut={ () => {
               document.querySelector('.contact-btn').setAttribute('src', send);
-            }}>
+            }}
+            >
             {loading ? 'Sending' : 'Send'}
             <img
               src={send}
@@ -142,8 +142,35 @@ const Contact = () => {
               className="contact-btn sm:w-[26px] sm:h-[26px] 
               w-[23px] h-[23px] object-contain"
             />
-          </button>
+          </button> */}
+          
         </form>
+        <button
+            type="submit"
+            className="contact-button live-demo flex justify-between 
+            sm:text-[18px] text-[14px] text-white 
+            font-bold font-poppins items-center py-5 pl-3 pr-3 
+            whitespace-nowrap gap-1  sm:h-[48px] 
+             h-[43px] rounded-[10px] bg-pink 
+            sm:mt-[22px] mt-[16px] transition duration-[0.2s] 
+            ease-in-out"
+            onMouseOver={() => {
+              document
+                .querySelector('.contact-btn')
+                .setAttribute('src', sendHover);
+            }}
+            onMouseOut={ () => {
+              document.querySelector('.contact-btn').setAttribute('src', send);
+            }}
+            >
+            {loading ? 'Sending' : 'Send'}
+            {/* <img
+              src={send}
+              alt="send"
+              className="contact-btn sm:w-[26px] sm:h-[26px] 
+              w-[23px] h-[23px] object-contain"
+            /> */}
+          </button>
       </motion.div>
     </div>
   );

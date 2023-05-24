@@ -28,6 +28,14 @@ import {
   kelhel,
   microverse,
   ramp,
+  realself,
+  binance,
+  maoer,
+  portfolio1,
+  portfolio2,
+  portfolio3,
+  portfolio4,
+  portfolio5,
 } from '../assets';
 
 export const navLinks = [
@@ -35,10 +43,14 @@ export const navLinks = [
     id: 'about',
     title: 'About',
   },
-  // {
-  //   id: 'projects',
-  //   title: 'Projects',
-  // },
+  {
+    id: 'projects',
+    title: 'Projects',
+  },
+  {
+    id: 'experience',
+    title: 'Experinces',
+  },
   {
     id: 'contact',
     title: 'Contact',
@@ -129,7 +141,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'UI/UX Developer',
+    title: 'UX Developer',
     company_name: 'Ramp Financial',
     icon: ramp,
     iconBg: '#8db971',
@@ -137,17 +149,18 @@ const experiences = [
     shadow: '#D4E8C8 0px 10px 15px -3px, #D4E8C8 0px 4px 6px -2px',
   },
   {
-    title: 'UI/UX Developer',
+    title: 'UX Developer',
     company_name: 'MiaoSiLa',
-    icon: microverse,
-    iconBg: '#9c8cca',
+    icon: maoer,
+    iconBg: '#f5c9c8',
     date: 'Dec 2020 - Aug 2021',
-    shadow: '#DDDCF9 0px 10px 15px -3px, #DDDCF9 0px 4px 6px -2px',
+    shadow: '#F9E5E5 0px 10px 15px -3px, #F9E5E5 0px 4px 6px -2px',
+    
   },
   {
-    title: 'UI/UX Developer',
+    title: 'Software Developer',
     company_name: 'Binance US',
-    icon: kelhel,
+    icon: binance,
     iconBg: '#F7C874',
     date: 'June 2018 - May 2020',
     shadow: '#f7f3cb 0px 10px 15px -3px, #f7f3cb 0px 4px 6px -2px',
@@ -155,123 +168,129 @@ const experiences = [
   {
     title: 'Front-End Developer',
     company_name: 'RealSelf',
-    icon: dcc,
-    iconBg: '#f5c9c8',
+    icon: realself,
+    iconColor: '#ffffff',
+    iconBg: '#9c8cca',
     date: 'June 2017 - May 2018',
-    shadow: '#F9D7D7 0px 10px 15px -3px, #F9D7D7 0px 4px 6px -2px',
+    shadow: '#DDDCF9 0px 10px 15px -3px, #DDDCF9 0px 4px 6px -2px',
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'mongodb',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'tailwind',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
-    demo: 'https://shaqdeff.github.io/KomiKult/',
+    name: 'Hamburger',
+    description: 'An infographic about hamburgers. Some fun facts, some nutrition data, some history knowledge, how burgers changing in the US and vary around the world. And, how to make a burger.',
+    skills: 'Infographic, Visual Information Design & Data Visualization.',
+    // tags: [
+    //   {
+    //     name: 'react',
+    //     color: 'blue-text-gradient',
+    //   },
+    //   {
+    //     name: 'mongodb',
+    //     color: 'green-text-gradient',
+    //   },
+    //   {
+    //     name: 'tailwind',
+    //     color: 'pink-text-gradient',
+    //   },
+    // ],
+    image: portfolio3,
+    repo: '/',
+    demo: '/',
   },
   {
     id: 'project-2',
-    name: 'Leaderboard',
+    name: 'Calender',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
-    demo: 'https://shaqdeff.github.io/Leaderboard/',
+      'A pre-installed calender app that comes with a new dual-screen phone system.',
+    skills: 'Product, Interface, Interaction Design',
+    // tags: [
+    //   {
+    //     name: 'react',
+    //     color: 'blue-text-gradient',
+    //   },
+    //   {
+    //     name: 'restapi',
+    //     color: 'green-text-gradient',
+    //   },
+    //   {
+    //     name: 'scss',
+    //     color: 'pink-text-gradient',
+    //   },
+    // ],
+    image: portfolio1,
+    repo: '/',
+    demo: '/',
   },
   {
     id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: math,
+    name: 'Empathy',
+    description: 'A keyboard application that helps people communicate their thoughts and emotions with each other using appropriate words and languages.',
+    skills: 'Emotion Problem-Solving App Design',
+    // tags: [
+    //   {
+    //     name: 'nextjs',
+    //     color: 'blue-text-gradient',
+    //   },
+    //   {
+    //     name: 'supabase',
+    //     color: 'green-text-gradient',
+    //   },
+    //   {
+    //     name: 'css',
+    //     color: 'pink-text-gradient',
+    //   },
+    // ],
+    image: portfolio5,
     repo: 'https://github.com/shaqdeff/Math-Magicians',
     demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
   },
   {
     id: 'project-4',
-    name: 'Movie Metro',
+    name: 'Melon',
     description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
+    skills: 'PUI/UX App & Interaction Design',
+    // tags: [
+    //   {
+    //     name: 'nextjs',
+    //     color: 'blue-text-gradient',
+    //   },
+    //   {
+    //     name: 'supabase',
+    //     color: 'green-text-gradient',
+    //   },
+    //   {
+    //     name: 'css',
+    //     color: 'pink-text-gradient',
+    //   },
+    // ],
+    image: portfolio4,
     repo: 'https://github.com/shaqdeff/Movie-Metro',
     demo: 'https://movie-metro.netlify.app/',
   },
   {
     id: 'project-5',
-    name: 'Nyeusi Fest Site',
+    name: 'Arcode',
     description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
+      'A gaming website and community for young people that offers games, a registration system, a leaderboard and a comment community.',
+    skills: 'Web Design, Graphic Design & Front-end Development',
+    //   tags: [
+    //   {
+    //     name: 'nextjs',
+    //     color: 'blue-text-gradient',
+    //   },
+    //   {
+    //     name: 'supabase',
+    //     color: 'green-text-gradient',
+    //   },
+    //   {
+    //     name: 'css',
+    //     color: 'pink-text-gradient',
+    //   },
+    // ],
+    image: portfolio2,
     repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
     demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
   },

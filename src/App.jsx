@@ -21,7 +21,9 @@ const App = () => {
         <div className="bg-hero-normal bg-cover bg-center bg-no-repeat">
           <About />
         </div>
-
+        <div className="bg-about bg-cover bg-center bg-no-repeat pb-10">
+        <Projects />
+        </div>
         <div className="bg-tech-normal bg-cover bg-center bg-no-repeat pb-10">
           <Tech />
         </div>
@@ -32,6 +34,7 @@ const App = () => {
           className="bg-about bg-center bg-no-repeat 
             rounded-tl-[150px] rounded-br-[150px]">
           <div
+            id="experience"
             className="bg-cover bg-center 
             bg-no-repeat rounded-tl-[150px] rounded-br-[130px]">
             <Experience />

@@ -44,6 +44,9 @@ import dcc from './company/dcc.png';
 import kelhel from './company/kelhel.png';
 import microverse from './company/microverse.png';
 import ramp from './company/ramp.png';
+import realself from './company/realself.png';
+import binance from './company/binance.png';
+import maoer from './company/maoer.png';
 
 import komikult from './projects/komikult.png';
 import leaderboard from './projects/leaderboard.png';
@@ -51,8 +54,17 @@ import math from './projects/math-magicians.png';
 import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
+import portfolio1 from './projects/portfolio-1.png';
+import portfolio2 from './projects/portfolio-2.png';
+import portfolio3 from './projects/portfolio-3.png';
+import portfolio4 from './projects/portfolio-4.png';
+import portfolio5 from './projects/portfolio-5.png';
+
 
 export {
+  realself,
+  binance,
+  maoer,
   sketch,
   bwmap,
   nairobi,
@@ -100,4 +112,9 @@ export {
   kelhel,
   microverse,
   ramp,
+  portfolio1,
+  portfolio2,
+  portfolio3,
+  portfolio4,
+  portfolio5,
 };

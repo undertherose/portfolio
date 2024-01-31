@@ -44,6 +44,9 @@ const Hero = () => {
             </h1>
             {/* <Text /> */}
             <p className={`${styles.heroSubText} mt-2  text-eerieBlack`}>
+              
+            </p>
+            <p className={`${styles.heroSubText} mt-2  text-eerieBlack`}>
               I am a <br className="sm:block hidden" />
               <Typewriter
                 options={{

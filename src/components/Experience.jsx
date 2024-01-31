@@ -7,7 +7,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
-import { download, downloadHover, resume } from '../assets';
+import { download, downloadHover, resume, resumeSW } from '../assets';
 import { textVariant } from '../utils/motion';
 
 const ExperienceCard = ({ experience }) => (
@@ -99,12 +99,12 @@ const Experience = () => {
                h-[46px] rounded-[10px] bg-pink 
               sm:mt-[22px] mt-[16px] transition duration-[0.2s] 
               ease-in-out"
-              // onClick={() =>
-              //   window.open(
-              //     'resume link', //paste the link to your resume here
-              //     '_blank'
-              //   )
-              // }
+              onClick={() =>
+                window.open(
+                  'src/files/resume.pdf', //paste the link to your resume here
+                  '_blank'
+                )
+              }
              
               onMouseOver={() => {
                 document
@@ -116,7 +116,7 @@ const Experience = () => {
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
               }}>
-              <a href="../files/resume.pdf" download /> 
+              {/* <a href="../files/resume.pdf" />  */}
               Download My Résumé
               {/* <img
                 src={download}

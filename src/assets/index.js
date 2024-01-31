@@ -39,13 +39,9 @@ import graphql from './tech/graphql.png';
 import postgresql from './tech/postgresql.png';
 import rubyrails from './tech/rubyrails.png';
 
-import coverhunt from './company/coverhunt.png';
-import dcc from './company/dcc.png';
-import kelhel from './company/kelhel.png';
-import microverse from './company/microverse.png';
-import ramp from './company/ramp.png';
-import realself from './company/realself.png';
-import binance from './company/binance.png';
+import antra from './company/antra.png';
+import belikewatr from './company/belikewatr.jpeg';
+import amazon from './company/amazon.png';
 import maoer from './company/maoer.png';
 
 import komikult from './projects/komikult.png';
@@ -60,10 +56,14 @@ import portfolio3 from './projects/portfolio-3.png';
 import portfolio4 from './projects/portfolio-4.png';
 import portfolio5 from './projects/portfolio-5.png';
 
+import resumeSW from "./files/resume.pdf";
+
 
 export {
-  realself,
-  binance,
+  resumeSW,
+  antra,
+  belikewatr,
+  amazon,
   maoer,
   sketch,
   bwmap,
@@ -107,11 +107,6 @@ export {
   movie,
   nyeusi,
   space,
-  coverhunt,
-  dcc,
-  kelhel,
-  microverse,
-  ramp,
   portfolio1,
   portfolio2,
   portfolio3,
